@@ -749,6 +749,7 @@ PRICING ↓
 .plans {
   display: flex;
   position: relative;
+  flex-direction: row;
   width: 100%;
   justify-content: space-between;
   gap: 2rem;
