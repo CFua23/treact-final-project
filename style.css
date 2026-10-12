@@ -961,6 +961,11 @@ TESTIMONIALS ↓
   justify-content: space-between;
 }
 
+.testimonials__img,
+.testimonials__description {
+  width: 50%;
+}
+
 section {
   padding: 0 32px;
   box-sizing: border-box;
@@ -971,32 +976,18 @@ section {
 #testimonials .container {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-  color: #243e63;
 }
 
 .row {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-  color: #243e63;
-}
-
-.testimonials__img,
-.testimonials__description {
-  width: 50%;
 }
 
 .testimonials__description {
-  width: calc(100% - 40%);
-  display: flex;
+display: flex;
   flex-direction: column;
   padding-left: 64px;
-  margin: 0;
-  padding: 0;
 }
 
 .section__tag {
@@ -1005,10 +996,6 @@ section {
   letter-spacing: 1.6px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
 }
 
 #testimonials .section__title {
@@ -1022,8 +1009,6 @@ section {
   color: rgb(36, 62, 99);
   margin: 16px 0;
   letter-spacing: 0.025em;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
 }
 
 .section__para {
@@ -1034,10 +1019,6 @@ section {
 }
 
 .testimonial {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
   color: #243e63;
   margin-top: 40px;
 }
@@ -1108,10 +1089,8 @@ h3 {
   display: flex
 }
 
-.testimonial__img {
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
+.testimonials__img {
+  width: 50%;
 }
 
 .testimonial__details {
@@ -1156,6 +1135,12 @@ h3 {
 
 .testimonial__button:hover {
   background: rgb(229, 231, 235);
+}
+
+.testimonial__img {
+  width: 80px;
+  heightL 80px;
+  border-radius: 50%;
 }
 
 
@@ -1473,6 +1458,16 @@ MOBILE RESPONSIVENESS ↓
     align-items: center;
   }
   #pricing .row {
+    margin-top: 40px;
+  }
+
+  .testimonials__img
+  .testimonials__descrption {
+    width: 100%
+  }
+
+  .testimonials__description {
+    padding-left: 0;
     margin-top: 40px;
   }
 }
