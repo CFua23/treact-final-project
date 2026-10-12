@@ -985,7 +985,8 @@ section {
 }
 
 .testimonials__description {
-display: flex;
+  width: 50%;
+  display: flex;
   flex-direction: column;
   padding-left: 64px;
 }
