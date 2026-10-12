@@ -1156,6 +1156,11 @@ START / CALL TO ACTION ↓
   overflow: hidden;
 }
 
+.row {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
 #start .contatiner {
   padding-top: 5rem;
   padding-bottom: 5rem;
