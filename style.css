@@ -1140,7 +1140,7 @@ h3 {
 
 .testimonial__img {
   width: 80px;
-  heightL 80px;
+  height: 80px;
   border-radius: 50%;
 }
 
@@ -1238,6 +1238,7 @@ svg:not(:root) {
     rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   transition: all 300ms ease;
+  margin-right: 32px;
 }
 
 .start__button:nth-child(2) {
@@ -1247,8 +1248,8 @@ svg:not(:root) {
 }
 
 .start__button {
-  padding: 12px 24px;
-  font-size: 14px;
+  padding: 16px 32px;
+  font-size: 16px;
   line-height: 1.5;
   border-radius: 500px;
   font-weight: 700;
@@ -1462,9 +1463,9 @@ MOBILE RESPONSIVENESS ↓
     margin-top: 40px;
   }
 
-  .testimonials__img
+  .testimonials__img,
   .testimonials__descrption {
-    width: 100%
+    width: 100%;
   }
 
   .testimonials__description {
