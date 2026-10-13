@@ -300,9 +300,9 @@ header .row {
 .header__email--btn {
   z-index: 2;
   margin: 8px;
-  height: calc(100%-16px);
+  height: calc(100% - 16px);
   border-radius: 500px;
-  width: 168px;
+  width: 160px;
   border: none;
   background-color: #6415ff;
   color: #fff;
@@ -325,17 +325,20 @@ header .row {
 
 .header__customers {
   margin-top: 16px;
-  padding-right: 120px;
+  padding-right: 0px;
   opacity: 0.5;
 }
 
 .header__img--wrapper {
-  width: calc(100% - 40%);
+  margin-top: 48px;
+  width: 100%;
+  max-width: 512px;
+  margin: 0 auto;
 }
 
 .header__img {
   width: 100%;
-  max-width: 768px;
+  max-width: 512px;
 }
 
 /* 
@@ -346,6 +349,18 @@ FEATURES ↓
 
 #features {
   position: relative;
+}
+
+#features .section__para {
+  text-align: center;
+  max-width: 576px;
+}
+
+.section__para {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7c8ba1;
+  line-height: 1.625;
 }
 
 #features .row__narrow {
@@ -395,7 +410,7 @@ FEATURES ↓
 
 .feature__para {
   margin-top: 16px;
-  font-size: 10px;
+  font-size: 16px;
   max-width: calc(634px / 3);
   color: rgb(124, 139, 161);
   line-height: 2;
@@ -641,6 +656,7 @@ VALUES ↓
 
 .section__para {
   font-size: 14px;
+  margin-top: 16px;
   font-weight: 500;
   color: #7c8ba1;
   line-height: 1.625;
@@ -1313,7 +1329,7 @@ svg:not(:root) {
 }
 
 .footer__column {
-  width: calc(100%/3)
+  width: calc(100%/5);
   margin-top:48px;
   display: flex;
   align-items: flex-start;
