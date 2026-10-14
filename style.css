@@ -552,10 +552,6 @@ STEPS ↓
   position: relative;
 }
 
-.__web-inspector-hide-shortcut__ {
-  visibility: hidden !important;
-}
-
 .steps__grid {
   position: absolute;
   left: 50%;
@@ -584,7 +580,7 @@ svg:not(:root) {
   max-width: 448px;
   padding: 0;
   margin-top: 64px;
-  text-align: center;
+  text-align: left;
 }
 
 .section__tag {
@@ -593,10 +589,7 @@ svg:not(:root) {
   letter-spacing: 1.6px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  text-align: left;
 }
 
 .step__number {
@@ -607,8 +600,8 @@ svg:not(:root) {
 }
 
 .step__description {
-  margin-top: 12px;
-  margin-left: 0;
+  margin-top: 0;
+  margin-left: 24px;
   display: flex;
   flex-direction:column;
   max-width: 320px;
@@ -631,18 +624,25 @@ svg:not(:root) {
 
 .step {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 32px;
 }
 
 .section__title {
   font-weight: 900;
   line-height: 1.5;
-  margin: 16px 0;
+  margin-left: 16px 0;
   letter-spacing: 0.025em;
 }
 
 .steps__img {
   z-index: 2;
+}
+
+.row {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 /* 
 
@@ -656,12 +656,16 @@ VALUES ↓
   align-items: center;
 }
 
+#values
+.section__title {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  line-height: 1.25;
+}
+
 .values__description {
-  width: 100%;
-  max-width: 448px;
-  padding: 0;
-  margin-top: 64px;
-  text-align: center;
+  width: 50%;
+  padding: 32px 64px 32px 0;
 }
 
 .value:nth-of-type(1) {
@@ -679,24 +683,23 @@ VALUES ↓
 .value {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-  color: #243e63;
 }
 
 #values .btn {
   margin-top: 48px;
 }
 
-.vaules__img {
+.value__img {
   width: 100%;
   max-width: 448px;
 }
 
-.value.plan:nth-child(2) .value__img--wrapper {
+.value:nth-child(2) .value__img--wrapper {
   background-color: #feb2b2;
+}
+
+.value:nth-child(1) .value__img--wrapper {
+  background-color: #9ae6b4;
 }
 
 .value__img--wrapper {
@@ -709,17 +712,14 @@ VALUES ↓
 }
 
 .value__name {
-  margin-left: 12px;
   font-size: 20px;
   font-weight: bold;
+  margin-left: 12px;
 }
 
 .values__list {
-  margin-left: 0px;
-  margin-right: 0px;
-  display: flex;
-  max-width: none;
-  flex-direction: row;
+max-width: 20rem;
+display: flex;
 }
 
 .value__title {
@@ -736,8 +736,7 @@ VALUES ↓
 }
 
 .values__img {
-  width: 100%;
-  max-width: 448px;
+  width: 50%;
 }
 /*
 
