@@ -413,14 +413,6 @@ FEATURES ↓
   font-weight: 500;
 }
 
-figure {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
-  unicode-bidi: isolate;
-}
-
 img {
   margin: 0;
   padding: 0;
@@ -663,6 +655,11 @@ VALUES ↓
   line-height: 1.25;
 }
 
+.section__title {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
 .values__description {
   width: 50%;
   padding: 32px 64px 32px 0;
@@ -729,10 +726,8 @@ display: flex;
 
 .value__para {
   margin-top: 16px;
-  line-height: 1.623;
+  line-height: 1.625;
   color: #718096;
-  margin: 0;
-  padding: 0;
 }
 
 .values__img {
