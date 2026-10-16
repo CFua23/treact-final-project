@@ -1469,12 +1469,16 @@ MOBILE RESPONSIVENESS ↓
   footer {
     padding: 80px 32px;
   }
+
+  .nav__links {display: none;
+  }
 }
 
 @media (max-width: 768px) {
   #quality .row,
   #values .row {
     flex-direction: column-reverse;
+    align-items: center;
   }
   #steps .row,
   #testimonials .row {
@@ -1486,7 +1490,7 @@ MOBILE RESPONSIVENESS ↓
   }
 
   .testimonials__img,
-  .testimonials__descrption {
+  .testimonials__description {
     width: 100%;
   }
 
@@ -1538,7 +1542,7 @@ MOBILE RESPONSIVENESS ↓
 @media (max-width: 768px) {
   .values__description {
     width: 100%;
-    padding: 32px; 0
+    padding: 32px 0
   }
 
   .values__img {
