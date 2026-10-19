@@ -293,7 +293,7 @@ header .row {
 
 .header__email--input:active {
   outline: none;
-  border-color: rgba (100, 21, 255);
+  border-color: #6415ff
 }
 
 .header__email--btn {
