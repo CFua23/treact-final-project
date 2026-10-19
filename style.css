@@ -1420,6 +1420,7 @@ h5 {
 
 .footer__social--link {
   padding: 8px;
+  margin-left: 16px;
   background: #f7fafc;
   display: flex;
   justify-content: center;
